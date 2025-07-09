@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: #000000;
+  color: #f0f0f0;
+}
+
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+}
+
+.glass-effect {
+  background: rgba(10, 10, 25, 0.5);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.title-glow {
+  text-shadow: 0 0 10px rgba(0, 191, 255, 0.6);
+}
+
+.form-input {
+  background-color: rgba(0,0,0,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+.form-input:focus {
+  background-color: rgba(0,0,0,0.4);
+  border-color: #00BFFF;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.3);
+  outline: none;
+}
+
+.btn-primary {
+  background-color: #00BFFF; /* DeepSkyBlue */
+  color: #000;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 191, 255, 0.4);
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 25px rgba(0, 191, 255, 0.7);
+}
