@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as THREE from "three";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const canvasRef = useRef(null);
@@ -257,7 +257,15 @@ const Login = () => {
                   أنشئ محطة جديدة
                 </button>
               </div>
+              <div className="mt-6 text-center">
+                        <p className="text-sm text-gray-500">
+                            هل أنت مدرس ؟
+                            <Link to={"/teacherSignup"} className="font-medium text-cyan-400 hover:text-cyan-300">أنشئ حساب مدرس من هنا</Link>
+                        </p>
+                    </div>
+              
             </div>
+            
           </div>
         </div>
       </div>
